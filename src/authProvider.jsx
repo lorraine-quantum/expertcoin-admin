@@ -1,7 +1,7 @@
 const authProvider = {
     login: ({ username, password }) => {
-        // const request = new Request('https://fidelity-trades-api.onrender.com/admin/auth/login', {
-            const request = new Request('http://localhost:3020/admin/auth/login', {
+        const request = new Request('https://api.expertcointech.com/admin/auth/login', {
+            // const request = new Request('http://localhost:3020/admin/auth/login', {
             method: 'POST',
             body: JSON.stringify({ username, password }),
             headers: new Headers({ 'Content-Type': 'application/json' }),
